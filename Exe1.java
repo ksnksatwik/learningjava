@@ -1,15 +1,35 @@
-package arras;
-
-import java.util.*;
-
 public class Exe1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int array[] = new int[5];
-        for (int i = 0; i <= 5; i++) {
-            System.out.print(" enter array value in index " + i + ":- ");
-            array[i] = sc.nextInt();
+        System.out.println("hello");
+        int x = 5;
+        double y = 3.4, z = -20.6789;
+        boolean isTrue = true;
+        char letter = 'A';
+        String name = "John";
+        
+        System.out.printf("%d %f %.3f\n",x,y,z);
+        
+        if (isTrue)
+        {
+            System.out.print("\tThis statement will execute.");
+        }
+        else 
+        {
+            System.out.print("\tThis one won't!");
+        }
+        
+        
+        for (int i = 0; i < name.length(); ++i)
+        {
+            System.out.print((char) (letter + i));
+        }
+        
+        while (!name.isEmpty()) 
+        {
+            System.out.print(name + " ");
+            break;
         }
 
     }
+
 }
